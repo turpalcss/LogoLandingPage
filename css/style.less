@@ -1,0 +1,31 @@
+// compress: false
+
+@import "vars";
+@import "mixins";
+
+html, body {
+    font-size: 15px;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background: url(../img/back.jpg);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// blocks
+
+@import "blocks/title";
+@import "blocks/content";
+@import "blocks/navbar";
+@import "blocks/grid";
+@import "blocks/preloader";
+@import "blocks/burger";

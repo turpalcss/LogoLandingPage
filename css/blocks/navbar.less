@@ -1,0 +1,199 @@
+// main: ../style.less
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+.logo {
+    transition: .5s;
+}
+.logo a {
+    position: fixed;
+    color: @primary;
+    left: 50px;
+    top: 40px;
+    z-index: 2;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    font-weight: 900;
+    transition: .5s;
+}
+
+.logo a:hover {
+    color: @secondary;
+}
+.header-chat {
+    position: fixed;
+    right: 48px;
+    top: 630px;
+    font-size: 30px;
+    z-index: 2;
+    cursor: pointer;
+    background: #009afc;
+    background: linear-gradient(315deg, #009afc 0%, #66c6ff 100%);
+    width: 70px;
+    height: 70px;
+    border-radius: 51px;
+    text-align: center;
+    color: white;
+    transition: .5s;
+}
+.header-chat:hover {
+    transform: rotate(360deg);
+}
+.header-chat .fas {
+    transform: translate(0px, 15px);
+}
+@media screen and (max-width: 700px) {
+    .nav-links li a {
+        font-size: 35px;
+    }
+    .nav-links li {
+        transform: translate(180px, 70px);
+    }
+    .line {
+        width: 45px;
+        height: 8px;
+        background: white;
+        margin: 11px;
+    }
+    .nav-links {
+        -webkit-clip-path: circle(115px at 93.2% 3.5%);
+    }
+    .logo a {
+        font-size: 55px;
+    }
+    .header-content .picture1,
+    .picture2,
+    .picture3,
+    .picture4,
+    .picture5,
+    .picture6 {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #picture {
+        display: none;
+    }
+    .header-source,
+    .header-chat,
+    .header-title {
+        display: none;
+    }
+    .header-content ul li {
+        width: 100%;
+    }
+    .header-content ul li a {
+    position: relative;
+    transition: 0.5s;
+    font-size: 150px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    top: 241px;
+}
+    .header-content ul li a:before {
+    display: none;
+}
+    .logo a {
+        font-size: 40px;
+    }
+    .logo a:hover {
+        color: #fff;
+        transition: 0s;
+    }
+    .header-content {
+    height: 100%;
+}
+    .header-content ul {
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        display: grid;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: block;
+        margin-block-start: 0em!important;
+        margin-block-end: 0em!important;
+        padding-inline-start: 0px!important;
+    }
+    .header-content .picture1 {
+        background: url(../img/nature.jpg);
+        background-size: cover;
+        transition: all 1s ease-in-out;
+        transform: translate(0%, 0);
+        min-height: 70vh;
+    }
+    .header-content .picture2 {
+        background: url(../img/restaurant.jpg);
+        background-size: cover;
+        transition: all 1s ease-in-out;
+        min-height: 70vh;
+    }
+    .header-content .picture3 {
+        background: url(../img/fitnes.jpg);
+        background-size: cover;
+        transition: all 1s ease-in-out;
+        min-height: 70vh;
+    }
+    .header-content .picture4 {
+        background: url(../img/backetball.jpg);
+        background-size: cover;
+        transition: all 1s ease-in-out;
+        min-height: 70vh;
+    }
+    .header-content .picture5 {
+        background: url(../img/music.jpg);
+        background-size: cover;
+        transition: all 1s ease-in-out;
+        min-height: 70vh;
+    }
+    .header-content .picture6 {
+        background: url(../img/emirate.jpg);
+        background-size: cover;
+        transition: all 1s ease-in-out;
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(947px at 110% -12%);
+        pointer-events: all;
+    }
+}
+
+.header-title {
+    position: absolute;
+    color: @primary;
+    left: 45%;
+    top: 40px;
+    z-index: 2;
+}
+
+.header-burger {
+    position: fixed;
+    right: 50px;
+    top: 40px;
+    color: @primary;
+    z-index: 2;
+}
+
+.header-source a {
+    position: fixed;
+    left: -50px;
+    top: 570px;
+    transform: rotate(-90deg);
+    line-height: 3rem;
+    font-size: .9rem;
+    color: @primary;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.header-source a:hover {
+    text-decoration: underline;
+}

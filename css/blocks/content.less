@@ -1,0 +1,84 @@
+// main: ../style.less
+
+.header-content {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.header-content #picture {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/back.jpg);
+    background-size: cover;
+
+}
+.header-content ul {
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    padding-top: 140px;
+    padding-bottom: 30px;
+}
+.header-content ul li {
+    list-style: none;
+}
+.header-content ul li a {
+    position: relative;
+    transition: .5s;
+    font-size: 150px;
+    font-weight: 800;
+    color: @primary;
+    text-decoration: none;
+}
+.header-content ul li a:before {
+    text-shadow: 0.5px 0.5px #000;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    color: @secondary;
+    transition: width 1.5s;
+}
+.header-content ul li a:hover:before,
+.header-content ul li.active a:before {
+    pointer-events: none;
+    width: 100%;
+}
+.header-content #picture.one {
+    background: url(../img/nature.jpg);
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    transform: translate(0%,0)
+}
+.header-content #picture.two {
+    background: url(../img/restaurant.jpg);
+    background-size: cover;
+     transition: all 1s ease-in-out;
+}
+.header-content #picture.three {
+    background: url(../img/fitnes.jpg);
+    background-size: cover;
+     transition: all 1s ease-in-out;
+}
+.header-content #picture.four {
+    background: url(../img/backetball.jpg);
+    background-size: cover;
+     transition: all 1s ease-in-out;
+}
+.header-content #picture.five {
+    background: url(../img/music.jpg);
+    background-size: cover;
+     transition: all 1s ease-in-out;
+}
+.header-content #picture.six {
+    background: url(../img/emirate.jpg);
+    background-size: cover;
+     transition: all 1s ease-in-out;
+}
